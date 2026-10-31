@@ -566,7 +566,7 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 
    ```bash
    git clone https://github.com/jyothikaogeti/prept-ai-interview-marketplace.git
-   cd prept-ai-interview-platform
+   cd prept-ai-interview-marketplace
    ```
 
 2. **Install dependencies**
