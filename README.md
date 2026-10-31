@@ -292,21 +292,21 @@ Indexes: `(status, createdAt)`, `(intervieweeId, status)`, and `(interviewerId, 
 
 #### **`Feedback`**
 
-| Field            | Type               | Description                           |
-| ---------------- | ------------------ | ------------------------------------- |
-| `id`             | `String`           | Primary key; UUID default             |
-| `bookingId`      | `String`           | Unique foreign key to `Booking.id`    |
-| `summary`        | `String`           | Overall session summary               |
-| `technical`      | `String`           | Technical assessment                  |
-| `communication`  | `String`           | Communication assessment              |
-| `problemSolving` | `String`           | Problem-solving assessment            |
-| `recommendation` | `String`           | Hiring recommendation and explanation |
-| `strengths`      | `String[]`         | List of strengths                     |
-| `improvements`   | `String[]`         | List of improvement areas             |
-| `overallRating`  | `FeedbackRating`   | Overall rating enum                   |
-| `sessionRating`  | `Int?`             | Optional user-provided session rating |
-| `sessionComment` | `String?` (`Text`) | Optional user comment                 |
-| `createdAt`      | `DateTime`         | Defaults to `now()`                   |
+| Field            | Type             | Description                           |
+| ---------------- | ---------------- | ------------------------------------- |
+| `id`             | `String`         | Primary key; UUID default             |
+| `bookingId`      | `String`         | Unique foreign key to `Booking.id`    |
+| `summary`        | `String`         | Overall session summary               |
+| `technical`      | `String`         | Technical assessment                  |
+| `communication`  | `String`         | Communication assessment              |
+| `problemSolving` | `String`         | Problem-solving assessment            |
+| `recommendation` | `String`         | Hiring recommendation and explanation |
+| `strengths`      | `String[]`       | List of strengths                     |
+| `improvements`   | `String[]`       | List of improvement areas             |
+| `overallRating`  | `FeedbackRating` | Overall rating enum                   |
+| `sessionRating`  | `Int?`           | Optional user-provided session rating |
+| `sessionComment` | `String?`        | Optional user comment                 |
+| `createdAt`      | `DateTime`       | Defaults to `now()`                   |
 
 `bookingId` is unique, implementing an optional one-to-one relationship with a booking. Deleting the booking cascades to its feedback record.
 
@@ -565,7 +565,7 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 1. **Clone or extract the repository**
 
    ```bash
-   git clone https://github.com/jyothikaogeti/prept-ai-interview-platform.git
+   git clone https://github.com/jyothikaogeti/prept-ai-interview-marketplace.git
    cd prept-ai-interview-platform
    ```
 
